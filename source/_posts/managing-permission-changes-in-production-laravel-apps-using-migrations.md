@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Managing permission changes in production Laravel apps using Migrations.
-cover_image: /assets/img/permissions.png
+cover_image: /assets/img/permissions.jpg
 date: 2018-04-15
 categories: [php]
 # cover_image: /assets/img/post-cover-image-1.png
