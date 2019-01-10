@@ -25,11 +25,11 @@
         </h1>
     </div>
     <div class="absolute pin-r pin-b p-8">
-                <a href="#article" class="text-grey-dark">Jump to post <i class="fa fa-arrow-alt-down ml-2"></i></a>
-            </div>
+        <a href="#article" class="text-grey-dark hidden md:block">Jump to post <i class="fa fa-arrow-alt-down ml-2"></i></a>
+    </div>
 </section>
 
-<div class="max-w-md mx-auto px-4 mt-16 lg:px-0" id="article">
+<div class="max-w-lg mx-auto px-4 mt-16 lg:px-0" id="article">
     
     
     {{-- @if ($page->categories)

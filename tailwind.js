@@ -190,6 +190,7 @@ module.exports = {
 
   fonts: {
     sans: [
+      "sofia-pro-soft",
       "Nunito Sans",
       "system-ui",
       "BlinkMacSystemFont",
