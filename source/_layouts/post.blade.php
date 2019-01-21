@@ -9,24 +9,22 @@
 
 @section('body')
 
-<section class="pb-8 px-4 h-auto md:h-screen flex flex-wrap items-center md:justify-center relative" style="background-image:url({{$page->cover_image}}); background-size:cover;">
-    <div class="w-full md:absolute md:pin-l md:pin-t md:pin-r py-4 px-0 md:p-6 menu-container" id="blog-menu">@include('_nav.menu', ['textColor' => 'text-white'])</div>
-    @include('_nav.menu-responsive', ['textColor' => 'text-white'])
-    <div class="container mx-auto py-16 px-4 md:px-0">
-        <p class="text-grey-lightest text-xl mb-2 text-center">
+<section class="pb-8 px-4 flex flex-wrap items-center md:justify-center relative bg-blue-lightest" >
+    <div class="w-full  md:pin-l md:pin-t md:pin-r py-4 px-0 md:p-6 menu-container" id="blog-menu">@include('_nav.menu')</div>
+    @include('_nav.menu-responsive')
+    <div class="container mx-auto py-8 md:py-16 px-4 md:px-0">
+        <p class="text-grey-dark text-xl mb-2 text-center">
             {{ $page->getDate()->format('F j, Y') }}
         </p>
-        <h1 class="text-5xl mt-0 text-center">
+        <h1 class="text-2xl md:text-5xl mt-0 text-center">
             <a
             href="{{ $page->getUrl() }}"
             title="Read more - {{ $page->title }}"
-            class="text-white font-extrabold"
+            class="text-grey-darkest font-extrabold"
             >{{ $page->title }}</a>
         </h1>
     </div>
-    <div class="absolute pin-r pin-b p-8">
-        <a href="#article" class="text-grey-dark hidden md:block">Jump to post <i class="fa fa-arrow-alt-down ml-2"></i></a>
-    </div>
+
 </section>
 
 <div class="max-w-lg mx-auto px-4 mt-16 lg:px-0" id="article">

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    // 'baseUrl' => 'https://danmatthewsm.e.com',
+    'baseUrl' => 'https://danmatthews.me',
     'production' => true,
 ];
