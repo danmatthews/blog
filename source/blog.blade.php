@@ -22,8 +22,10 @@ pagination:
             </div>
             @include('_nav.menu-responsive')
         @endif
-
+        
+        <div class="my-16">
         @include('_components.post-preview-inline')
+        </div>
         
 </section>
     @endforeach
